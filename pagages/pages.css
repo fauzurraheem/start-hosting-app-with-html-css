@@ -1,0 +1,102 @@
+main{
+    padding-top: 2.5rem;
+    width: 100vw;
+}
+
+.backgroundimage{
+    background: url(plans-background.jpg) center/cover;
+    filter: grayscale(50%);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.fsection{
+    border: 2px solid rgb(6, 26, 6);
+    padding: 1.3rem 1rem 1.5rem 1.5rem;
+    width: 80%;
+    margin-top: 1rem;
+    text-decoration: none; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-left: 0;
+    position: relative;
+    overflow: hidden;
+}
+.page_a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.fh1{
+    color: rgb(9, 15, 9);
+}
+
+.fh2{
+    font-weight: 500;
+    color: rgb(128, 109, 109);
+
+}
+.fh3{
+    background-color: white;
+    padding: 1rem;
+    border: 2px solid rgb(9, 26, 9);
+    font-weight: 300;
+    font-size: larger;
+    color: rgb(20, 41, 20);
+}
+.b{
+    clear: both;
+}
+#first{
+    background-color: rgba(215, 255, 220, 0.95);
+    position: relative;
+}
+#i{
+    float: right;
+    border-right: none;
+    border-left: 4px solid #0e4f1f;
+    text-align: right;
+    background-color: rgba(215, 255, 220, 0.95);
+}
+#last{
+    background-color: rgba(14, 79, 31, 0.95);
+}
+.page_b{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+.badge{
+    position:absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    font-size: 0.8rem;
+    color: white;
+    padding: 15px;
+    background-color: #ff4545;
+    transform: rotate(45deg)  translate(3.5rem, -1rem);
+    transform-origin: center;
+    width: 12rem;
+    text-align: center;
+
+}
+.fsection:hover,.fsection:active, #i:hover, #i:active{
+    border: 2px solid red;
+}
+
+@media (min-width:40rem){
+    main{
+        max-width: 1400px;
+        margin: 3rem auto;
+    }
+}
+@media (min-width:1000px){
+    #i{
+        border-right: 2px solid rgb(6, 26, 6);
+    }
+    #i:hover{
+        border-right: red;
+    }
+}
+

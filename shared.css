@@ -1,0 +1,289 @@
+
+
+:root{
+  --headercolor: red;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-top: 3.5rem;
+  margin: 0;
+}
+@supports (display: grid){
+  body{
+    display: grid;  
+    grid-template-rows: 3.5rem auto fit-content(8rem) ;
+    grid-template-areas: 'head'
+                         'body'
+                         'footer';
+    padding-top:0;
+    height: 100%;
+
+  }
+}
+main{
+  width: 100vw;
+  grid-area: body;
+}
+.backdrop{
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    top: 0;
+}
+.header{
+  background-color: gold;
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgb(216, 98, 2);
+  padding: 8px 16px;
+  width: 100%;
+  height: 3.6rem;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: head;
+  
+}
+.img_a img{
+  height: 2.5rem;
+  
+}
+.main_nav{
+  margin: 0 ;
+  padding: 0;
+    
+}
+.a{
+  color: rgb(4, 37, 6);
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+.nav_ul{
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  display: none;
+  padding: 0;
+  width: 100%;
+
+}
+
+
+.nav_li{
+  padding: 6px 16px;
+  margin: 0 8px;
+  border-bottom: 4px solid gold;
+
+}
+@media (min-width: 40rem){
+  .nav_ul{
+    display: flex;
+
+  }
+
+}
+@media (min-width: 40rem){
+  .toggle-button{
+    display: none;
+  }
+}
+
+
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 80%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav__item{
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  padding: 4px;
+  color: #262900;
+}
+.p_li, .mobile-nav__item--cta a{
+  background-color: var(--headercolor);
+  border-radius: 10px;
+  border: 0;
+  color: white;
+   
+}
+.nav_li .a:hover, .nav_li .a:active {
+  border-bottom: 4px solid white;
+  color: white;
+
+}
+.p_li .a:hover,.p_li ,a:active{
+  color: var(--headercolor);
+
+}
+
+.p_li:hover,.p_li:active, .mobile-nav__item--cta a:hover{
+  background-color: azure;
+  color: var(--headercolor);
+
+}
+.p_li{
+  animation: wiggle 400ms 3s 8 cubic-bezier(0.23, 1, 0.320, 1) none;
+}
+
+.footer{
+  background-color: rgb(5, 0, 0);
+  margin: 0;
+  padding: 8px;
+  margin-top: 30px;
+  width: 100vw;
+  grid-area: footer;
+}
+.finalnavul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    
+}
+.finalnavul li{
+  list-style: none;
+  padding: 0 10px;
+  margin: 0.5rem;
+}
+.finalnavul a{
+  text-decoration: none;
+  color: white;
+}
+.finalnavul a:hover, .finalnavul a:active{
+  color: rgb(226, 222, 222);
+}
+@media (min-width:40rem){
+  .finalnavul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+
+}
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+  
+.modal__title {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+  
+.modal__actions {
+  text-align: center;
+}
+  
+.modal__action {
+  border: 1px solid #0e4f1f;
+  background: #0e4f1f;
+  text-decoration: none;
+  color: white;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+  
+.modal__action:hover,
+.modal__action:active {
+  background: #2ddf5c;
+  border-color: #2ddf5c;
+}
+  
+.modal__action--negative {
+  background: var(--headercolor);
+  border-color: var(--headercolor);
+}
+  
+.modal__action--negative:hover,
+.modal__action--negative:active {
+  background: #ff5454;
+  border-color: #ff5454;
+}
+  
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+  
+.toggle-button:focus {
+  outline: none;
+}
+  
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+  
+
+@keyframes wiggle {
+  0%{
+    transform: rotatez(0);
+
+  }
+  40%{
+    transform: rotateZ(-10deg);
+  }
+  75%{
+    transform: rotateZ(10deg);
+  }
+  100%{
+    transform: rotatez(0deg);
+
+  }
+}

@@ -1,0 +1,218 @@
+#main_fdiv{
+    position: relative;
+
+}
+.two{
+    width: 100vw;
+    height: 50vh;
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgba(80,60,18,0.6) 10%,transparent ), url() center/cover border-box, #ff1b68;
+    /* background-image: linear-gradient(to left top, red,green,blue); */
+    /* background-image: radial-gradient(ellipse fardest-side ,green,purple,blue); */
+    text-transform: uppercase;
+    color: beige ;
+    
+}
+#main_fdiv h1{
+  position: absolute;
+  left: 3%;
+  bottom: 5%;
+  font-size: 1.5rem;
+
+}
+
+@media (min-width: 40rem){
+    .two{
+        background-position: 50% 25%;
+        height: 50vh ;
+
+    }
+    #main_fdiv h1{
+        font-size: 2.5rem;
+
+    }
+}
+
+.three{
+    text-align: center;
+    color: rgb(9, 145, 9);
+    text-transform: capitalize;
+
+}
+.four{
+    margin: 30px 0;
+    margin: auto;
+    text-align: center;
+}
+.four .plan_div{
+    width: 100%;
+    /* text-align: center; */
+}
+.article{
+    padding: 1rem;
+    text-align: center;
+    background-color: aquamarine;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 400px ;
+    height: 410px;
+}
+.h2_article{
+    color: gray ;
+}
+.article_two{
+    background-color: rgb(49, 153, 63);
+    color: antiquewhite;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    height: 435px;
+}
+.two__h1{
+    background-color: rgb(255, 236, 212);
+    padding: 3px;
+    border-radius: 8px;
+    color: rgb(15, 15, 15);
+}
+.main_ul{
+    margin: 0;
+    padding: 0;
+}
+.article_class{
+    list-style:none ;
+    margin: 8px 0;
+}
+.button{
+    background-color: rgb(1, 56, 6);
+    font-weight: bold;
+    /* height: 40px; */
+    /* width: 150px; */
+    border-radius: 8px;
+    box-shadow: none;
+    color: aliceblue;
+    border: 3px solid bisque;
+
+}
+@media (min-width:40.5rem) {
+    .four .plan_div{
+        width: 100%;
+        display: -webkit-box;
+        display:-webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .article{
+        display: -webkit-box;
+        display:-webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 30%;
+        vertical-align: middle;
+        min-width: 13rem;
+        max-width: 25rem;
+
+    }
+}
+.main_body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+.lastsection{
+    background-color: #e70059;
+    padding: 16px;
+    text-transform: capitalize ;
+    text-align: center;
+    color: bisque;
+    margin-top: 80px;
+}
+.lsection_ul{
+    padding: 0;
+
+}
+.lsection_ul li{
+    list-style: none;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 5px;
+}
+.lsection_div{
+    background-color: #e98baf;
+    border: 2px solid bisque;
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+    margin: auto;
+    padding: 20px;
+}
+
+@media (min-width: 40rem) {
+    .lsection_ul {
+        display: -webkit-box;
+        display:-webkit-flex;
+        display: -ms-flexbox;
+        display:flex;
+        justify-content: space-evenly;
+        
+      
+    }
+    .lsection_ul li{
+        margin: 0 1rem;
+    }
+}
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .modal__actions {
+    text-align: center;
+  }
+  
+  .modal__action {
+    border: 1px solid #0e4f1f;
+    background: #0e4f1f;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .modal__action:hover,
+  .modal__action:active {
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+  }
+  
+  .modal__action--negative {
+    background: red;
+    border-color: red;
+  }
+  
+  .modal__action--negative:hover,
+  .modal__action--negative:active {
+    background: #ff5454;
+    border-color: #ff5454;
+  }
+
+
+
+
